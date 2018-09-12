@@ -1,43 +1,8 @@
 @import '../../../../node_modules/slick-carousel/slick/slick.scss';
 @import '../../../../node_modules/slick-carousel/slick/slick-theme.scss';
 
-.slick {
-  &-loading, &-list {
-    background: #fff center center no-repeat;
-  }
-
-  &-dots {
-    left: 55px;
-    top: 315px;
-    display: flex;
-    flex-direction: column;
-
-    li {
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      margin: 8px 0;
-      background: rgba(52, 52, 56, 0.95);
-      border: 1px solid  rgba(255, 255, 255, 0.4);
-
-      &.slick-active {
-        background: $green;
-      }
-
-      button:before {
-        content: '';
-        font-family: inherit;
-        font-size: 14px;
-      }
-
-    }
-  }
-
-
-}
-
 .slick-dotted.slick-slider {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 
