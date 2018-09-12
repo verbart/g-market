@@ -1,0 +1,11 @@
+@import "main-header-top/main-header-top";
+@import "main-header-bottom/main-header-bottom";
+
+.main-header {
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

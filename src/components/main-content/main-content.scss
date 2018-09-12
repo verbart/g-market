@@ -1,0 +1,17 @@
+.main-content {
+
+  &__slider{
+
+  }
+}
+
+.slide1 {
+  background: url('./../images/main-banner.jpg') top center no-repeat;
+  background-size: cover;
+  min-height: 664px;
+}
+
+.slide2, .slide3, .slide4, .slide5 {
+  background: url('./../images/main-banner.jpg') top center no-repeat;
+  min-height: 664px;
+}

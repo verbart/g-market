@@ -1,0 +1,29 @@
+@import '../../../../node_modules/bootstrap/scss/bootstrap-grid';
+
+
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1745px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 375px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.container-fluid {
+  //width: 1745px;
+
+  @media (max-width: 1200px) {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

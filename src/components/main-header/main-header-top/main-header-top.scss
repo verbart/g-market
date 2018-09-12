@@ -1,0 +1,33 @@
+.main-header-top {
+  background: $black;
+  //display: flex;
+  //align-items: center;
+  //justify-content: space-between;
+  padding: 8px 0;
+  min-height: 40px;
+
+  &__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $white;
+  }
+
+  .auth {
+    padding: 0 40px;
+
+    &__link {
+      text-decoration: none;
+
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.main-footer {
+  background:
+        linear-gradient(rgba(45, 47, 41, 0.95) 100%,transparent),
+        url('./../images/bg_footer.jpg') top center no-repeat;
+  min-height: 500px;
+  padding-top: 60px;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__menus {
+    display: flex;
+    justify-content: center;
+    color: $white;
+    padding-top: 55px;
+  }
+
+  &__menu-block {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  &__menu-header {
+    font-weight: 400;
+    padding-bottom: 18px;
+
+    &:after {
+      content:'';
+      display: block;
+      margin-top: 15px;
+      background: $white;
+      width: 20px;
+      height: 1px;
+    }
+  }
+
+  &__menu{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+
+    &-link {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  &__contact-item {
+    display: flex;
+    align-items: center;
+    //max-width: 254px;
+    padding-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__callme {
+    padding-bottom: 23px;
+  }
+
+  &__social-media{
+    padding-left: 6px;
+  }
+
+  &__payments {
+    padding-top: 8px;
+
+    &-title {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__payment-method {
+    padding-right: 15px;
+  }
+
+  &__copyright {
+    padding-top: 33px;
+    color: #8F8F8F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+

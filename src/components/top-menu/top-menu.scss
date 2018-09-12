@@ -1,0 +1,36 @@
+.top-menu{
+  display: flex;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+  }
+
+  &__item {
+    padding: 0 15px;
+    transition: $delay;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  @media (max-width: 1200px){
+    padding: 20px;
+    opacity: .9;
+    transition: $delay*2;
+    font-size: 18px;
+
+    &__list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  }
+}

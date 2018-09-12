@@ -1,0 +1,14 @@
+.main-header-top
+  .container-fluid
+    .row.justify-content-between
+      .col-auto.main-header-top__left
+        .main-header-top__menu
+          include ../../top-menu/top-menu
+        include ../../callme/callme
+      .col-auto.main-header-top__right
+        .lang-switcher
+          select
+            option(selected='', value='Рус') Рус
+            option Укр
+        .auth
+          a.auth__link(href='#') Вход / Регистрация
