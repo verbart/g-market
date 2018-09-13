@@ -6,7 +6,8 @@ $('.announcement__slider').slick({
   arrows: false,
   dots: false,
   infinite: true,
-  asNavFor: '.announcement__slider-preview'
+  asNavFor: '.announcement__slider-preview',
+  draggable: false
 });
 
 $('.announcement__slider-preview').slick({
@@ -16,7 +17,6 @@ $('.announcement__slider-preview').slick({
   dots: false,
   infinite: true,
   asNavFor: '.announcement__slider',
-  focusOnSelect: true
+  focusOnSelect: true,
+  draggable: false
 });
-
-
