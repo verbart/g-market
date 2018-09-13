@@ -1,12 +1,12 @@
 @import '../../../../node_modules/slick-carousel/slick/slick.scss';
 @import '../../../../node_modules/slick-carousel/slick/slick-theme.scss';
 
-.slick-dotted.slick-slider {
-  margin-bottom: 0px;
+
+.slick-dots {
+  width: auto;
 }
-
-
-
-
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 
 
