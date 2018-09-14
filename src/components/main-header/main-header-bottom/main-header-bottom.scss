@@ -5,12 +5,16 @@
 
   &__logo {
     display: flex;
-    margin-left: -15px;
+    margin-left: 15px;
   }
 
   &__menu {
     display: flex;
     justify-content: space-between;
     margin-top: -12px;
+  }
+
+  &__actions {
+    padding-right: 0;
   }
 }

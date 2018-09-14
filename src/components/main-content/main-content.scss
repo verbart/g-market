@@ -1,9 +1,13 @@
 .main-content {
   //min-height: 664px;
 
+  div {
+    //border: 1px solid red;
+  }
+
   .slick {
     &-loading, &-list {
-      //background: #fff center center no-repeat;
+      background: #fff center center no-repeat;
     }
 
     &-dots {
@@ -38,12 +42,12 @@
 
 .announcement {
   position: relative;
+  margin-top: 0;
 
   &__slider {
     color: #fff;
     height: 0;
     min-height: 664px;
-    background-size: cover;
 
     .slick-list, .slick-track, .slick-slide {
       height: 100%;
@@ -75,7 +79,8 @@
     padding: 0 5px;
 
     &-item {
-      width: auto !important;
+      width: 132px!important;
+      height: 50px;
       padding: 10px 5px 0;
       color: #fff;
       cursor: pointer;
@@ -89,6 +94,7 @@
     }
   }
 }
+
 .announcementList {
   background: #E5E5E5;
   display: flex;
@@ -124,34 +130,41 @@
 .slide2 {
   background: url('./../images/superprices.jpg') top center / cover no-repeat;
   min-height: 824px;
+  vertical-align: bottom;
 }
 
 .slide3 {
   background: url('./../images/actions.jpg') top center / cover no-repeat;
   min-height: 824px;
+  vertical-align: bottom;
 }
 
 .slide4 {
   background: url('./../images/soon.jpg') top center / cover no-repeat;
   min-height: 824px;
+  vertical-align: bottom;
 }
 
 .slide5 {
   background: url('./../images/bottommenu.jpg') top center / cover no-repeat;
   min-height: 824px;
+  vertical-align: bottom;
 }
 
 .announce1{
   background: url("./../images/announce1.jpg") top center / cover no-repeat;
   min-height: 664px;
+  vertical-align: bottom;
 }
 
 .announce2{
   background: url("./../images/announce2.jpg") top center / cover no-repeat;
   min-height: 664px;
+  vertical-align: bottom;
 }
 
 .announce3{
   background: url("./../images/announce3.jpg") top center / cover no-repeat;
   min-height: 664px;
+  vertical-align: bottom;
 }
