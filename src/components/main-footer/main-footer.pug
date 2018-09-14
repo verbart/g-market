@@ -1,69 +1,74 @@
-footer.main-footer
-  .container-fluid
+footer.main-footer.main-footer_bottom
+  .container
     .main-footer__logo
       a(href='/')
         img(src='./images/logo_bottom.png')
     .main-footer__menus
-      .main-footer__menu-block
-        .main-footer__menu-header Каталог продукции
-        .main-footer__menu
-          a.main-footer__menu-link(href='#') Строительство и ремонт
-          a.main-footer__menu-link(href='#') Инструменты
-          a.main-footer__menu-link(href='#') Дом и быт
-          a.main-footer__menu-link(href='#') Сад и огород
-          a.main-footer__menu-link(href='#') Туризм
-      .main-footer__menu-block
-        .main-footer__menu-header О нас
-        .main-footer__menu
-          a.main-footer__menu-link(href='#') Контакты
-          a.main-footer__menu-link(href='#') Вакансии
-          a.main-footer__menu-link(href='#') Новости и статьи
-          a.main-footer__menu-link(href='#') Реквизиты
-          a.main-footer__menu-link(href='#') Сертификаты
-          a.main-footer__menu-link(href='#') Отзывы
-      .main-footer__menu-block
-        .main-footer__menu-header Покупателю
-        .main-footer__menu
-          a.main-footer__menu-link(href='#') Личный кабинет
-          a.main-footer__menu-link(href='#') Обмен и возврат
-          a.main-footer__menu-link(href='#') Доставка
-          a.main-footer__menu-link(href='#') Оплата
-          a.main-footer__menu-link(href='#') Гарантия
-      .main-footer__menu-block
-        .main-footer__menu-header Контакты
-        .main-footer__contact-info
-          .main-footer__contacts
-            .main-footer__contact-item
-              img(src='./images/cellphone.svg')
-            .main-footer__contact-item
-              | (050) 555 44 33
-              br
-              | (095) 333 22 11
-          .main-footer__callme.callme.callme_white
-            img.callme__ico(src='./images/callback2.svg')
-            .callme__title Заказать обратный звонок
-          .main-footer__social-media
-            include ../soc-media/soc-media
-      .main-footer__menu-block
-        .main-footer__menu-header Головной офис
-        .main-footer__info
+      .row.main-footer__left
+        .col.main-footer__menu-block
+          .main-footer__menu-header Каталог продукции
+          .main-footer__menu
+            a.main-footer__menu-link(href='#') Строительство и ремонт
+            a.main-footer__menu-link(href='#') Инструменты
+            a.main-footer__menu-link(href='#') Дом и быт
+            a.main-footer__menu-link(href='#') Сад и огород
+            a.main-footer__menu-link(href='#') Туризм
+        .col.main-footer__menu-block
+          .main-footer__menu-header О нас
+          .main-footer__menu
+            a.main-footer__menu-link(href='#') Контакты
+            a.main-footer__menu-link(href='#') Вакансии
+            a.main-footer__menu-link(href='#') Новости и статьи
+            a.main-footer__menu-link(href='#') Реквизиты
+            a.main-footer__menu-link(href='#') Сертификаты
+            a.main-footer__menu-link(href='#') Отзывы
+        .col.main-footer__menu-block
+          .main-footer__menu-header Покупателю
+          .main-footer__menu
+            a.main-footer__menu-link(href='#') Личный кабинет
+            a.main-footer__menu-link(href='#') Обмен и возврат
+            a.main-footer__menu-link(href='#') Доставка
+            a.main-footer__menu-link(href='#') Оплата
+            a.main-footer__menu-link(href='#') Гарантия
+            a.main-footer__menu-link.main-footer__menu-link_marked(href='#') Акции и скидки
+            a.main-footer__menu-link.main-footer__menu-link_marked(href='#') Ожидаемые товары
+
+      .row.main-footer__right
+        .col-6.main-footer__menu-block
+          .main-footer__menu-header Контакты
           .main-footer__contact-info
             .main-footer__contacts
               .main-footer__contact-item
-                img(src='./images/map.svg')
+                img(src='./images/cellphone.svg')
               .main-footer__contact-item
-                | Украина, г.Херсон,
+                | (050) 555 44 33
                 br
-                | ул. Перекопская, 210
-            .main-footer__contacts
-              .main-footer__contact-item
-                img(src='./images/email.svg')
-              .main-footer__contact-item
-                span email@gazda.ua
-        .main-footer__payments
+                | (095) 333 22 11
+            .main-footer__callme.callme.callme_white
+              img.callme__ico(src='./images/callback2.svg')
+              .callme__title Заказать обратный звонок
+        .col-6.main-footer__menu-block
+          .main-footer__menu-header Головной офис
+          .main-footer__info
+            .main-footer__contact-info
+              .main-footer__contacts
+                .main-footer__contact-item
+                  img(src='./images/map.svg')
+                .main-footer__contact-item
+                  | Украина, г.Херсон,
+                  br
+                  | ул. Перекопская, 210
+              .main-footer__contacts
+                .main-footer__contact-item
+                  img(src='./images/email.svg')
+                .main-footer__contact-item
+                  span email@gazda.ua
+        .col-6.main-footer__menu-block.main-footer__social-media
+          include ../soc-media/soc-media
+        .col-6.main-footer__menu-block.main-footer__payments
           .main-footer__payments-title Принимаем к оплате:
           .main-footer__payment-methods
             img.main-footer__payment-method(src='./images/mastercard.png')
             img.main-footer__payment-method(src='./images/visa.png')
-    .main-footer__copyright
+  .main-footer__copyright
       span (с) ООО “GAZDA” 2008-2018  Правовая информация

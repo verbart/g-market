@@ -7,7 +7,7 @@ $('.announcement__slider').slick({
   dots: false,
   infinite: true,
   asNavFor: '.announcement__slider-preview',
-  // draggable: false,
+  draggable: false,
   // autoplay: true,
   // autoplaySpeed: 1500
 });

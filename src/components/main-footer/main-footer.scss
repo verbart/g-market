@@ -11,11 +11,21 @@
     align-items: center;
   }
 
+  &__left,
+  &__right {
+    margin-left: -35px;
+    margin-right: -35px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   &__menus {
     display: flex;
     justify-content: center;
     color: $white;
     padding-top: 55px;
+    margin-left: -35px;
+    margin-right: -35px;
   }
 
   &__menu-block {
@@ -76,9 +86,9 @@
     padding-bottom: 23px;
   }
 
-  &__social-media{
-    padding-left: 6px;
-  }
+  //&__social-media{
+  //
+  //}
 
   &__payments {
     padding-top: 8px;
@@ -98,6 +108,13 @@
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     text-align: center;
+  }
+
+  &_bottom {
+
+    .main-footer__menu-link_marked {
+      display: none;
+    }
   }
 }
 
