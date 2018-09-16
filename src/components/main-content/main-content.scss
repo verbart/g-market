@@ -86,19 +86,25 @@
       padding: 10px 5px 0;
       color: #fff;
       cursor: pointer;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: none;
+      }
     }
 
-    .slick-track, .slick-slide {
+    .slick-slide {
       width: auto !important;
-      filter: grayscale(100%);
     }
+
     .slick-track {
+      width: auto !important;
       display: flex !important;
     }
 
-    //.slick-active {
-    //  filter: grayscale(10%);
-    //}
+    .slick-active {
+      filter: none;
+    }
   }
 }
 
