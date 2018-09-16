@@ -47,7 +47,7 @@
   &__slider {
     color: #fff;
     height: 0;
-    min-height: 664px;
+    height: 664px;
 
     .slick-list, .slick-track, .slick-slide {
       height: 100%;
@@ -69,8 +69,10 @@
 
   &__slider-preview {
     position: absolute;
-    bottom: 19%;
-    left: 50%;
+    //bottom: 19%;
+    //left: 50%;
+    left: 967px;
+    bottom: 155px;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
@@ -79,8 +81,8 @@
     padding: 0 5px;
 
     &-item {
-      width: 132px!important;
-      height: 50px;
+      width: 142px!important;
+      height: 60px;
       padding: 10px 5px 0;
       color: #fff;
       cursor: pointer;
@@ -88,10 +90,15 @@
 
     .slick-track, .slick-slide {
       width: auto !important;
+      filter: grayscale(100%);
     }
     .slick-track {
       display: flex !important;
     }
+
+    //.slick-active {
+    //  filter: grayscale(10%);
+    //}
   }
 }
 
@@ -129,42 +136,42 @@
 
 .slide2 {
   background: url('./../images/superprices.jpg') top center / cover no-repeat;
-  min-height: 824px;
+  height: 824px;
   vertical-align: bottom;
 }
 
 .slide3 {
   background: url('./../images/actions.jpg') top center / cover no-repeat;
-  min-height: 824px;
+  height: 824px;
   vertical-align: bottom;
 }
 
 .slide4 {
   background: url('./../images/soon.jpg') top center / cover no-repeat;
-  min-height: 824px;
+  height: 824px;
   vertical-align: bottom;
 }
 
 .slide5 {
   background: url('./../images/bottommenu.jpg') top center / cover no-repeat;
-  min-height: 824px;
+  height: 824px;
   vertical-align: bottom;
 }
 
 .announce1{
   background: url("./../images/announce1.jpg") top center / cover no-repeat;
-  min-height: 664px;
+  height: 664px;
   vertical-align: bottom;
 }
 
 .announce2{
   background: url("./../images/announce2.jpg") top center / cover no-repeat;
-  min-height: 664px;
+  height: 664px;
   vertical-align: bottom;
 }
 
 .announce3{
   background: url("./../images/announce3.jpg") top center / cover no-repeat;
-  min-height: 664px;
+  height: 664px;
   vertical-align: bottom;
 }

@@ -5,6 +5,13 @@
   min-height: 500px;
   padding-top: 60px;
 
+  .callme {
+
+    &__ico {
+      margin-right: 13px;
+    }
+  }
+
   &__logo {
     display: flex;
     justify-content: center;
@@ -82,7 +89,7 @@
   &__contact-item {
     display: flex;
     align-items: center;
-    padding: 0 17px 0 2px;
+    padding-right: 17px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -90,7 +97,9 @@
   }
 
   &__callme {
+    padding-top: 2px;
     padding-bottom: 23px;
+
   }
 
   //&__social-media{
@@ -98,10 +107,10 @@
   //}
 
   &__payments {
-    padding-top: 8px;
+    margin-top: -1px;
 
     &-title {
-      padding-bottom: 15px;
+      padding-bottom: 16px;
     }
   }
 
