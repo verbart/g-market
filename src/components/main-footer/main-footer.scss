@@ -5,6 +5,15 @@
   min-height: 500px;
   padding-top: 60px;
 
+  &__container {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   .callme {
 
     &__ico {
@@ -25,17 +34,30 @@
     margin-right: -32px;
     padding-top: 55px;
     color: $white;
+
+    @media(max-width: 1150px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__left,
   &__right {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media(max-width: 1150px) {
+      justify-content: center;
+    }
   }
 
   &__menu-block {
     padding-left: 32px;
     padding-right: 24px;
+
+    @media(max-width: 1150px) {
+      padding-bottom: 30px;
+    }
   }
 
   &__left {
@@ -44,10 +66,37 @@
 
   &__right {
 
+    @media(max-width: 1150px) {
+    }
+
     .main-footer__menu-block {
       width: 50%;
       padding-left: 47px;
       padding-right: 15px;
+
+      &_social-media {
+        width: 100%;
+        order: 1;
+        justify-content: center;
+        display: flex;
+      }
+
+      @media(max-width: 1150px) {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 30%;
+      }
+
+      &_office,
+      &_payments{
+        padding-left: 59px;
+
+        @media(main-width: 1150px) {
+          padding-left: 0;
+        }
+      }
     }
   }
 
@@ -102,16 +151,13 @@
 
   }
 
-  //&__social-media{
-  //
-  //}
-
   &__payments {
-    margin-top: -1px;
 
     &-title {
       padding-bottom: 16px;
+      line-height: 18px;
     }
+
   }
 
   &__payment-method {
@@ -119,7 +165,7 @@
   }
 
   &__copyright {
-    padding-top: 33px;
+    padding-top: 34px;
     color: #8F8F8F;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
