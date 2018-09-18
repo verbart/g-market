@@ -1,14 +1,15 @@
 .menu-toggle{
-  margin-top: 5px;
-  position: relative;
-  height: 30px;
-  width: 35px;
-  cursor: pointer;
+  margin-right: 104px;
   display: none;
+  margin-top: 20px;
+  height: 18px;
+  width: 26px;
+  position: relative;
+  cursor: pointer;
   z-index: 30;
   transition: $delay*2;
 
-  @media(max-width: 1200px){
+  @media(max-width: 1366px){
     display: flex;
     align-self: center;
   }
@@ -17,9 +18,9 @@
     position: absolute;
     left:0; right:0;
     top: 0; bottom: 0;
-    height: 4px;
+    height: 2px;
     margin: auto;
-    background: #fff;
+    background: #5C5B60;
   }
 
   &:before{
@@ -27,8 +28,8 @@
     position: absolute;
     left:0; right:0;
     top: 0;
-    height: 4px;
-    background: #fff;
+    height: 2px;
+    background: #5C5B60;
     transition: .4s;
   }
 
@@ -37,8 +38,8 @@
     position: absolute;
     left:0; right:0;
     bottom: 0;
-    height: 4px;
-    background: #fff;
+    height: 2px;
+    background: #5C5B60;
     transition: .4s;
   }
 

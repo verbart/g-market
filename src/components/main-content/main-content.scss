@@ -1,9 +1,5 @@
 .main-content {
-  //min-height: 664px;
-
-  div {
-    //border: 1px solid red;
-  }
+  //min-height: 822px;
 
   .slick {
     &-loading, &-list {
@@ -37,6 +33,10 @@
       }
     }
 
+  }
+
+  .slick-slide.slick-current {
+    padding-top: 8px;
   }
 }
 
@@ -128,11 +128,15 @@
   }
 
   &__info {
-
+    max-width: 200px;
   }
 
   &__title {
-
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1A1B1B;
   }
 
   &__description {

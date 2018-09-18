@@ -18,6 +18,10 @@
     align-items: center;
     color: $white;
     padding-right: 0;
+
+    @media(max-width: 1366px){
+      padding-right: 35px;
+    }
   }
 
   .auth {
