@@ -1,7 +1,7 @@
 .menu-toggle{
-  margin-right: 104px;
+  //margin-right: 104px;
   display: none;
-  margin-top: 20px;
+  margin-top: 5px;
   height: 18px;
   width: 26px;
   position: relative;
@@ -16,8 +16,10 @@
 
   span{
     position: absolute;
-    left:0; right:0;
-    top: 0; bottom: 0;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
     height: 2px;
     margin: auto;
     background: #5C5B60;
@@ -26,7 +28,8 @@
   &:before{
     content:'';
     position: absolute;
-    left:0; right:0;
+    left:0;
+    right:0;
     top: 0;
     height: 2px;
     background: #5C5B60;
@@ -36,7 +39,8 @@
   &:after{
     content:'';
     position: absolute;
-    left:0; right:0;
+    left:0;
+    right:0;
     bottom: 0;
     height: 2px;
     background: #5C5B60;
@@ -44,7 +48,8 @@
   }
 
   &_active{
-    right:0;
+    right:-1px;
+    top: 1px;
 
     span{
       opacity:0;
@@ -54,14 +59,15 @@
       left: 5px;
       transform-origin: top left;
       transform: rotate(45deg);
-      width: 39px;
+      width: 27px;
+      top: -2px;
     }
 
     &:after{
       left: 5px;
       transform: rotate(-45deg);
       transform-origin: bottom left;
-      width: 39px;
+      width: 27px;
     }
   }
 }

@@ -3,33 +3,27 @@
   min-height: 94px;
   background: $white;
 
-  @media(max-width: 1366px) {
-    padding: 11px 30px 6px;
-    min-height: auto;
+  @media(max-width: 1500px) {
+    padding: 11px 0 6px;
+    min-height: 80px;
   }
 
   &__logo {
     display: flex;
-    margin-left: 15px;
 
-    @media(max-width: 1366px) {
-      display: none;
-    }
+    &-icon {
 
-    &_laptop {
-      display: none;
-
-      @media(max-width: 1366px) {
-        display: flex;
-        margin-left: -15px;
+      @media(max-width: 1500px) {
+        height: 62px;
       }
     }
+
   }
 
   &__menu {
     display: flex;
     justify-content: space-between;
-    margin-top: -12px;
+    margin-top: -9px;
 
   }
 
@@ -37,10 +31,5 @@
     padding-right: 0;
     margin-right: -15px;
 
-    @media(max-width: 1366px) {
-      .actions {
-        display: none;
-      }
-    }
   }
 }

@@ -1,15 +1,18 @@
 .actions
-  .actions__item
+  .actions__item.actions__item_toogle
+    include ./../menu-toggle/menu-toggle
+  .actions__item.actions__item_bookmark
     img.bookmark(src='./images/bookmark.svg')
-  .actions__item
+  .actions__item.actions__item_search
     img.search(src='./images/search.svg')
-  .actions__item
+  .actions__item.actions__item_like
     img.like(src='./images/like.svg')
     .like__quantity
       .quantity 3
-  .actions__item
-    img.basket(src='./images/basket.svg')
-    .basket__quantity
-      .quantity 2
-    .basket__price
-      .price 20 745.30 грн
+  .actions__item.actions__item_basket
+    .basket
+      img.basket__icon(src='./images/basket.svg')
+      .basket__quantity
+        .quantity 2
+      .basket__price
+        .price 20 745.30 грн

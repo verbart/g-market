@@ -1,14 +1,9 @@
 .main-header-bottom
-  .container-fluid
-    .row.justify-content-between
-      .col-auto.main-header-bottom__logo
-        a(href='/')
-          img(src='./images/logo_top.png')
-      .col-auto.main-header-bottom__logo_laptop
-        a(href='/')
-          img(src='./images/logo_1366.png')
-      .col-auto.main-header-bottom__menu
-        include ../../categories-menu/categories-menu
-      .col-auto.main-header-bottom__actions
-        include ../../menu-toggle/menu-toggle
-        include ../../actions/actions
+  .container-fluid.main-header__container
+    .main-header-bottom__logo
+      a(href='/')
+        img.main-header-bottom__logo-icon(src='./images/logo_top.png')
+    .main-header-bottom__menu
+      include ../../categories-menu/categories-menu
+    .main-header-bottom__actions
+      include ../../actions/actions

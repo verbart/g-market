@@ -5,8 +5,55 @@
   margin-top: 15px;
 
   &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0 15px;
     position: relative;
+
+    @media(max-width: 1500px) {
+      display: none;
+
+      &_toogle,
+      &_basket{
+        display: flex;
+      }
+
+      &_basket {
+        .basket__price {
+          display: none;
+        }
+      }
+    }
+
+  }
+
+  &.is-open {
+    width: 239px;
+    flex-wrap: wrap;
+
+    .actions__item {
+      width: 50%;
+
+      &_search {
+        order: 1;
+      }
+
+      &_bookmark {
+        order: 2;
+      }
+
+      &_like {
+        order: 3;
+      }
+
+      &_basket {
+        width: 100%;
+        order: 4;
+      }
+
+
+    }
   }
 }
 
@@ -22,6 +69,7 @@
 }
 
 
+
 .like {
 
   &__quantity {
@@ -32,6 +80,7 @@
 }
 
 .basket {
+  position: relative;
 
   &__quantity {
     position: absolute;
@@ -46,4 +95,5 @@
     color: $black2;
     white-space: nowrap;
   }
+
 }

@@ -35,9 +35,7 @@
 
   }
 
-  .slick-slide.slick-current {
-    padding-top: 8px;
-  }
+
 }
 
 .announcement {
@@ -53,7 +51,7 @@
       height: 100%;
     }
     .slick-slide, .slick-slide > div {
-      //display: flex !important;
+      display: flex !important;
     }
     .slick-slide > div {
       width: 100%;
@@ -142,6 +140,12 @@
   &__description {
 
   }
+}
+
+.slide1 {
+  background: url('./../images/slide1.jpg') top center / cover no-repeat;
+  height: 822px;
+  vertical-align: bottom;
 }
 
 .slide2 {

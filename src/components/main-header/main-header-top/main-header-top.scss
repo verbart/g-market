@@ -1,6 +1,6 @@
 .main-header-top {
   background: $black;
-  //display: flex;
+  display: flex;
   //align-items: center;
   //justify-content: space-between;
   padding: 8px 0;
@@ -17,9 +17,9 @@
     justify-content: flex-end;
     align-items: center;
     color: $white;
-    padding-right: 0;
 
     @media(max-width: 1366px){
+      //padding-right: 52px;
       padding-right: 35px;
     }
   }
