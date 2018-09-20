@@ -23,12 +23,6 @@
     align-items: center;
     color: $white;
 
-    .top-menu {
-      .&__list:nth-child(1) {
-        padding-right: 43px;
-      }
-    }
-
     @media(max-width: 1366px){
       //padding-right: 52px;
       padding-right: 35px;

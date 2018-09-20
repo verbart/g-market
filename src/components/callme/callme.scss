@@ -12,6 +12,10 @@
   &:hover {
     color: $white;
     cursor: pointer;
+
+    .callme__ico path{
+      stroke: $white;
+    }
   }
 
   &_white {

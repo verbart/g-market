@@ -1,5 +1,6 @@
 .main-header-bottom {
-  padding: 17px 30px 10px;
+  //padding: 17px 30px 10px;
+  padding: 17px 0px 10px;
   min-height: 94px;
   background: $white;
 
@@ -24,12 +25,20 @@
     display: flex;
     justify-content: space-between;
     margin-top: -9px;
-    margin-left: 20px;
-
+    padding-right: 50px;
   }
 
   &__actions {
-    margin-right: -15px;
-    margin-top: -21px;
+    display: flex;
+    margin-top: -6px;
+    padding-right: 64px;
+
+    @media(max-width: 1750px) {
+      //margin-right: 0;
+    }
+
+    @media(max-width: 1500px) {
+      margin-right: -37px;
+    }
   }
 }
