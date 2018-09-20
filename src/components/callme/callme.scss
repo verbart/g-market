@@ -7,13 +7,14 @@
 
   &__ico {
     margin-right: 9px;
+    stroke: $green;
   }
 
   &:hover {
     color: $white;
     cursor: pointer;
 
-    .callme__ico path{
+    .callme__ico {
       stroke: $white;
     }
   }
