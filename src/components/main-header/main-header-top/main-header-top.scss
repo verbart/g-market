@@ -6,10 +6,15 @@
   padding: 8px 0;
   min-height: 40px;
 
+  &__menu {
+    padding-right: 15px;
+  }
+
   &__left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-right: 15px;
   }
 
   &__right {
@@ -17,6 +22,12 @@
     justify-content: flex-end;
     align-items: center;
     color: $white;
+
+    .top-menu {
+      .&__list:nth-child(1) {
+        padding-right: 43px;
+      }
+    }
 
     @media(max-width: 1366px){
       //padding-right: 52px;
