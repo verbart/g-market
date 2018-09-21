@@ -25,7 +25,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: -9px;
-    padding-left: 9px;
+    padding-right: 53px;
+
+    @media(max-width: 1700px) {
+      padding: 0 75px;
+    }
   }
 
   &__actions {
@@ -34,7 +38,7 @@
     padding-right: 66px;
 
     @media(max-width: 1750px) {
-      //margin-right: 0;
+      padding-right: 85px;
     }
 
     @media(max-width: 1500px) {

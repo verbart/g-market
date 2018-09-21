@@ -17,10 +17,6 @@
 
     &:hover {
       cursor: pointer;
-
-      .actions__ico {
-        stroke: $red;
-      }
     }
 
     @media(max-width: 1700px) {
@@ -56,7 +52,6 @@
   }
 
   &.is-open {
-    //width: 239px;
     background: #ffffff;
     flex-wrap: wrap;
     position: fixed;
@@ -80,6 +75,11 @@
 
       &_like {
         order: 3;
+
+        .like__quantity {
+          top: 12px;
+          right: 13px;
+        }
       }
 
       &_basket {
@@ -122,7 +122,7 @@
 
   &__quantity {
     position: absolute;
-    top: -13px;
+    top: -11px;
     right: -6px;
   }
 }
@@ -139,7 +139,7 @@
 
   &__quantity {
     position: absolute;
-    top: -13px;
+    top: -14px;
     right: -32px;
 
     @media(max-width: 1500px) {
@@ -150,7 +150,7 @@
 
   &__price {
     position: absolute;
-    top: 17px;
+    top: 15px;
     left: 42px;
     color: $black2;
     white-space: nowrap;

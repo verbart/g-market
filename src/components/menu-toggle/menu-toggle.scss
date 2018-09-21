@@ -7,6 +7,15 @@
   z-index: 30;
   transition: $delay*2;
 
+  &:hover {
+
+    span,
+    &:before,
+    &:after {
+      background: $red;
+    }
+  }
+
   @media(max-width: 1366px){
     display: flex;
     align-self: center;
@@ -46,8 +55,7 @@
   }
 
   &_active{
-    right:-1px;
-    top: 1px;
+    right:1px;
 
     span{
       opacity:0;
