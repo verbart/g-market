@@ -28,8 +28,9 @@
     }
 
     @media(max-width: 1500px) {
-      padding: 0 20px;
+      padding: 0 27px;
       display: none;
+      border-left: 1px solid #D6D6D6;
 
       &_toogle{
         display: flex;
@@ -55,11 +56,19 @@
   }
 
   &.is-open {
-    width: 239px;
+    //width: 239px;
+    background: #ffffff;
     flex-wrap: wrap;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    z-index: 50;
 
     .actions__item {
+      display: flex;
       width: 50%;
+      border: 1px solid #D6D6D6;
+      padding: 24px 0px;
 
       &_search {
         order: 1;
@@ -74,8 +83,16 @@
       }
 
       &_basket {
-        width: 100%;
         order: 4;
+        width: 100%;
+        border: none;
+        padding-top: 20px;
+        padding-bottom: 14px;
+        justify-content: flex-start;
+
+        .basket__price {
+          display: flex;
+        }
       }
 
 
@@ -112,7 +129,7 @@
 
 .basket {
   position: relative;
-  margin-top: 2px;
+  margin-top: 4px;
 
   &__ico {
     width: 35px;
@@ -126,8 +143,8 @@
     right: -32px;
 
     @media(max-width: 1500px) {
-      top: -10px;
-      right: -8px;
+      top: -8px;
+      right: -6px;
     }
   }
 
