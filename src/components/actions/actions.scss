@@ -15,6 +15,14 @@
       display: none;
     }
 
+    &:hover {
+      cursor: pointer;
+
+      .actions__ico {
+        stroke: $red;
+      }
+    }
+
     @media(max-width: 1700px) {
       padding: 0 8px;
     }
@@ -37,6 +45,13 @@
       }
     }
 
+  }
+
+  &__ico {
+    height: 30px;
+    width: 30px;
+    stroke: $black2;
+    fill: transparent;
   }
 
   &.is-open {
@@ -86,23 +101,29 @@
 }
 
 
-
 .like {
 
   &__quantity {
     position: absolute;
-    top: -17px;
+    top: -13px;
     right: -6px;
   }
 }
 
 .basket {
   position: relative;
+  margin-top: 2px;
+
+  &__ico {
+    width: 35px;
+    height: 35px;
+    fill: transparent;
+  }
 
   &__quantity {
     position: absolute;
-    top: -17px;
-    right: -31px;
+    top: -13px;
+    right: -32px;
 
     @media(max-width: 1500px) {
       top: -10px;
@@ -112,7 +133,7 @@
 
   &__price {
     position: absolute;
-    top: 13px;
+    top: 17px;
     left: 42px;
     color: $black2;
     white-space: nowrap;

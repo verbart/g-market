@@ -2,16 +2,16 @@
   .actions__item.actions__item_toogle
     include ./../menu-toggle/menu-toggle
   .actions__item.actions__item_bookmark
-    img.bookmark(src='./images/bookmark.svg')
+    +icon({icon: 'bookmark', className: 'actions__ico'})
   .actions__item.actions__item_search
-    img.search(src='./images/search.svg')
+    +icon({icon: 'search', className: 'actions__ico'})
   .actions__item.actions__item_like
-    img.like(src='./images/like.svg')
+    +icon({icon: 'like', className: 'actions__ico'})
     .like__quantity
       .quantity 3
   .actions__item.actions__item_basket
     .basket
-      img.basket__icon(src='./images/basket.svg')
+      +icon({icon: 'basket', className: 'basket__ico'})
       .basket__quantity
         .quantity 2
       .basket__price
