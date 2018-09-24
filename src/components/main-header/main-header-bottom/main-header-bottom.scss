@@ -35,14 +35,14 @@
   &__actions {
     display: flex;
     margin-top: -6px;
-    padding-right: 66px;
-
-    @media(max-width: 1750px) {
-      padding-right: 85px;
-    }
-
-    @media(max-width: 1500px) {
-      padding-right: 15px;
-    }
+    //padding-right: 66px;
+    //
+    //@media(max-width: 1750px) {
+    //  padding-right: 85px;
+    //}
+    //
+    //@media(max-width: 1500px) {
+    //  padding-right: 15px;
+    //}
   }
 }
