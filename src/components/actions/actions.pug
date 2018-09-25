@@ -2,16 +2,16 @@
   .actions__item.actions__item_toogle
     include ./../menu-toggle/menu-toggle
   .actions__item.actions__item_bookmark
-    +icon({icon: 'bookmark', className: 'actions__ico'})
+    +icon({icon: 'bookmark', class: 'actions__icon'})
   .actions__item.actions__item_search
-    +icon({icon: 'search', className: 'actions__ico'})
+    +icon({icon: 'search', class: 'actions__icon'})
   .actions__item.actions__item_like
-    +icon({icon: 'like', className: 'actions__ico'})
+    +icon({icon: 'like', class: 'actions__icon'})
     .actions__indicator 3
-  .actions__item.actions__item_basket
+  .actions__item.actions__item_cart
     .actions__indicator 2
 
-    .basket
-      +icon({icon: 'basket', className: 'basket__ico'})
-      .basket__price
+    .cart
+      +icon({icon: 'cart', class: 'cart__icon'})
+      .cart__price
         .price 20 745.30 грн

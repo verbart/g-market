@@ -1,20 +1,25 @@
 nav.categories-menu
   ul.categories-menu__list
     li.categories-menu__item
-      img.categories-menu__item-pic(src='./images/constructions.png')
       a.categories-menu__link(href='#')
-        | Строительство
-        br
-        | и ремонт
+        +icon({icon: 'constructions', class: 'categories-menu__link-image'})
+        .categories-menu__link-text
+          | Строительство
+          br
+          | и ремонт
     li.categories-menu__item
-      img.categories-menu__item-pic(src='./images/tools.png')
-      a.categories-menu__link(href='#') Инструменты
+      a.categories-menu__link(href='#')
+        +icon({icon: 'tools', class: 'categories-menu__link-image'})
+        .categories-menu__link-text Инструменты
     li.categories-menu__item
-      img.categories-menu__item-pic(src='./images/for-home.png')
-      a.categories-menu__link(href='#') Дом и быт
+      a.categories-menu__link(href='#')
+        +icon({icon: 'for-home', class: 'categories-menu__link-image'})
+        .categories-menu__link-text Дом и быт
     li.categories-menu__item
-      img.categories-menu__item-pic(src='./images/garden.png')
-      a.categories-menu__link(href='#') Сад и огород
+      a.categories-menu__link(href='#')
+        +icon({icon: 'garden', class: 'categories-menu__link-image'})
+        .categories-menu__link-text Сад и огород
     li.categories-menu__item
-      img.categories-menu__item-pic(src='./images/tourism.png')
-      a.categories-menu__link(href='#') Туризм
+      a.categories-menu__link(href='#')
+        +icon({icon: 'tourism', class: 'categories-menu__link-image'})
+        .categories-menu__link-text Туризм

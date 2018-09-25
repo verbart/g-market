@@ -24,7 +24,7 @@
         right: -6px;
       }
     }
-    &_basket {
+    &_cart {
       .actions__indicator {
         position: absolute;
         top: -14px;
@@ -54,11 +54,11 @@
         display: flex;
       }
 
-      &_basket {
+      &_cart {
         display: flex;
         margin-top: 2px;
 
-        .basket__price {
+        .cart__price {
           display: none;
         }
       }
@@ -84,7 +84,7 @@
     }
   }
 
-  &__ico {
+  &__icon {
     height: 30px;
     width: 30px;
     stroke: $black2;
@@ -122,7 +122,7 @@
         }
       }
 
-      &_basket {
+      &_cart {
         order: 4;
         width: 100%;
         border: none;
@@ -130,7 +130,7 @@
         padding-bottom: 14px;
         justify-content: flex-start;
 
-        .basket__price {
+        .cart__price {
           display: flex;
         }
       }
@@ -145,12 +145,12 @@
   }
 }
 
-.basket {
+.cart {
   display: flex;
   position: relative;
   //margin-top: 4px;
 
-  &__ico {
+  &__icon {
     width: 35px;
     height: 35px;
     fill: transparent;
