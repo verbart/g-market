@@ -18,13 +18,29 @@
     &_toogle {
       display: none;
     }
+    &_bookmark {
+      .actions__icon {
+        height: 20px;
+      }
+    }
+    &_search {
+      .actions__icon {
+        height: 24px;
+      }
+    }
     &_like {
+      .actions__icon {
+        height: 23px;
+      }
       .actions__indicator {
         top: -16px;
         right: -6px;
       }
     }
     &_cart {
+      .actions__icon {
+        width: 33px;
+      }
       .actions__indicator {
         position: absolute;
         top: -14px;
@@ -84,6 +100,7 @@
     height: 30px;
     width: 30px;
     stroke: $black2;
+    stroke-width: 2px;
     fill: transparent;
     cursor: pointer;
 
@@ -152,17 +169,17 @@
 
   //margin-top: 4px;
 
-  &__icon {
-    width: 35px;
-    height: 35px;
-    stroke: $black2;
-    fill: transparent;
-    cursor: pointer;
-
-    &:hover {
-      stroke: $red;
-    }
-  }
+  //&__icon {
+  //  width: 35px;
+  //  height: 35px;
+  //  stroke: $black2;
+  //  fill: transparent;
+  //  cursor: pointer;
+  //
+  //  &:hover {
+  //    stroke: $red;
+  //  }
+  //}
 
   &__price {
     display: flex;
