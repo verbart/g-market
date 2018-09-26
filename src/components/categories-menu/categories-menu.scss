@@ -53,7 +53,7 @@
     color: $black2;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    line-height: 22px:
+    line-height: 22px;
     font-weight: 700;
 
     @media(max-width: 1366px) {
@@ -63,10 +63,11 @@
 
 
     &-image {
+      fill: transparent;
+      font-size: 51px;
 
       @media(max-width: 1366px) {
         font-size: 50px;
-        fill: transparent;
       }
     }
 
