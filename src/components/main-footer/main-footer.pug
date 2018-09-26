@@ -39,13 +39,13 @@ footer.main-footer.main-footer_bottom
             .main-footer__contact-info
               .main-footer__contacts
                 .main-footer__contact-item
-                  img(src='./images/cellphone.svg')
+                  +icon({icon: 'cellphone', class: 'main-footer__contact-icon'})
                 .main-footer__contact-item
                   | (050) 555 44 33
                   br
                   | (095) 333 22 11
               .main-footer__callme.callme.callme_white
-                img.callme__ico(src='./images/callback2.svg')
+                +icon({icon: 'callback', class: 'main-footer__contact-icon'})
                 .callme__title Заказать обратный звонок
           .main-footer__menu-block.main-footer__menu-block_office
             .main-footer__menu-header Головной офис
@@ -53,14 +53,14 @@ footer.main-footer.main-footer_bottom
               .main-footer__contact-info
                 .main-footer__contacts
                   .main-footer__contact-item
-                    img(src='./images/map.svg')
+                    +icon({icon: 'map', class: 'main-footer__contact-icon'})
                   .main-footer__contact-item
                     | Украина, г.Херсон,
                     br
                     | ул. Перекопская, 210
                 .main-footer__contacts
                   .main-footer__contact-item
-                    img(src='./images/email.svg')
+                    +icon({icon: 'email', class: 'main-footer__contact-icon'})
                   .main-footer__contact-item
                     span email@gazda.ua
           .main-footer__menu-block.main-footer__menu-block_social-media

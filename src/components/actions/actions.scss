@@ -37,10 +37,6 @@
       }
     }
 
-    &:hover {
-      cursor: pointer;
-    }
-
     //@media(max-width: 1700px) {
     //  padding: 0 8px;
     //}
@@ -89,6 +85,11 @@
     width: 30px;
     stroke: $black2;
     fill: transparent;
+    cursor: pointer;
+
+    &:hover {
+      stroke: $red;
+    }
   }
 
   &.is-open {
@@ -148,12 +149,19 @@
 .cart {
   display: flex;
   position: relative;
+
   //margin-top: 4px;
 
   &__icon {
     width: 35px;
     height: 35px;
+    stroke: $black2;
     fill: transparent;
+    cursor: pointer;
+
+    &:hover {
+      stroke: $red;
+    }
   }
 
   &__price {

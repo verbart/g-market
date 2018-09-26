@@ -4,17 +4,20 @@
   align-items: center;
   padding-left: 19px;
   transition: $delay;
+  cursor: pointer;
 
-  &__ico {
+  &__icon {
     margin-right: 9px;
     stroke: $green;
   }
 
   &:hover {
-    color: $white;
-    cursor: pointer;
 
-    .callme__ico {
+    .callme__title {
+      color: $white;
+    }
+
+    .callme__icon {
       stroke: $white;
     }
   }

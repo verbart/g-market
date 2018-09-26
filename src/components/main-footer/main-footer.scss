@@ -240,6 +240,12 @@
     }
   }
 
+  &__contact-icon {
+    stroke: $white;
+    fill: transparent;
+    font-size: 12px;
+  }
+
   &__callme {
     padding-top: 2px;
     padding-bottom: 23px;
